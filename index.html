@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🔥 IP Location Tracker</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+
+<body>
+    <div class="tracker">
+        <h1>🔥 IP Location Tracker</h1>
+
+        <div class="input-section">
+            <input type="text" id="ipInput" placeholder="Enter IP or leave blank for your IP" />
+            <button onclick="getLocation()">Track 🔍</button>
+        </div>
+
+        <div id="loading">Fetching location...</div>
+
+        <div id="info" style="display: none;">
+            <p><strong>IP:</strong> <span id="ip"></span></p>
+            <p><strong>City:</strong> <span id="city"></span></p>
+            <p><strong>Region:</strong> <span id="region"></span></p>
+            <p><strong>Country:</strong> <span id="country"></span></p>
+            <p><strong>Postal:</strong> <span id="postal"></span></p>
+            <p><strong>ISP:</strong> <span id="org"></span></p>
+            <p><strong>Timezone:</strong> <span id="timezone"></span></p>
+            <p><strong>Latitude:</strong> <span id="lat"></span></p>
+            <p><strong>Longitude:</strong> <span id="lon"></span></p>
+        </div>
+
+        <div id="map"></div>
+    </div>
+
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
